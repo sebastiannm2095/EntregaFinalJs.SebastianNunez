@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Créditos</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    
+    <h1>Simulador de Créditos</h1>
+    <form id="formCredito">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required><br><br>
+
+        <label for="sueldo">Sueldo Líquido:</label>
+        <input type="number" id="sueldo" required><br><br>
+
+        <label for="otrosIngresos">Otros Ingresos:</label>
+        <input type="number" id="otrosIngresos" required><br><br>
+
+        <label for="gastos">Promedio de Gastos Mensuales:</label>
+        <input type="number" id="gastos" required><br><br>
+
+        <label for="tarjetaCredito">Gastos en Tarjeta de Crédito:</label>
+        <input type="number" id="tarjetaCredito" required><br><br>
+
+        <label for="aniosCredito">Años de Crédito:</label>
+        <input type="number" id="aniosCredito" required><br><br>
+
+        <button type="submit">Simular Crédito</button>
+    </form>
+
+    <div id="resultado"></div>
+
+    <h2>Historial de Simulaciones</h2>
+    <ul id="historial"></ul>
+
+
+
+    <script src="./main.js"></script>
+</body>
+</html>

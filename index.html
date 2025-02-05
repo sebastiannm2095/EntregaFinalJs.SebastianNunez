@@ -1,43 +1,51 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulador de Créditos</title>
-    <link rel="stylesheet" href="./styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simulador de Crédito</title>
+  <!-- Incluimos SweetAlert2 desde CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <style>
+  <link rel="stylesheet" href="./styles.css">
+   
+  </style>
 </head>
 <body>
-    
-    <h1>Simulador de Créditos</h1>
+  <!-- Header sin menú -->
+  <header>
+    <h1>Simulador de Crédito</h1>
+  </header>
+  
+  <!-- Contenedor principal -->
+  <div class="container">
+    <!-- Formulario para ingresar los datos -->
     <form id="formCredito">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" required><br><br>
-
-        <label for="sueldo">Sueldo Líquido:</label>
-        <input type="number" id="sueldo" required><br><br>
-
-        <label for="otrosIngresos">Otros Ingresos:</label>
-        <input type="number" id="otrosIngresos" required><br><br>
-
-        <label for="gastos">Promedio de Gastos Mensuales:</label>
-        <input type="number" id="gastos" required><br><br>
-
-        <label for="tarjetaCredito">Gastos en Tarjeta de Crédito:</label>
-        <input type="number" id="tarjetaCredito" required><br><br>
-
-        <label for="aniosCredito">Años de Crédito:</label>
-        <input type="number" id="aniosCredito" required><br><br>
-
-        <button type="submit">Simular Crédito</button>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" required>
+      
+      <label for="sueldo">Sueldo:</label>
+      <input type="number" id="sueldo" required>
+      
+      <label for="otrosIngresos">Otros Ingresos:</label>
+      <input type="number" id="otrosIngresos" required>
+      
+      <label for="gastos">Gastos:</label>
+      <input type="number" id="gastos" required>
+      
+      <label for="tarjetaCredito">Tarjeta de Crédito:</label>
+      <input type="number" id="tarjetaCredito" required>
+      
+      <label for="aniosCredito">Años de Crédito:</label>
+      <input type="number" id="aniosCredito" required>
+      
+      <button type="submit">Calcular Crédito</button>
     </form>
-
+    
+    <!-- Contenedor para mostrar el resultado de la simulación -->
     <div id="resultado"></div>
-
+    
+    <!-- Historial de simulaciones -->
     <h2>Historial de Simulaciones</h2>
     <ul id="historial"></ul>
-
-
-
-    <script src="./main.js"></script>
-</body>
-</html>
+  </div>

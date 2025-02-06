@@ -1,69 +1,91 @@
+/* Estilos generales */
 body {
-    background-color: #f5f8fb;
+  font-family: Arial, sans-serif;
+  background-color: #e0e0e0; /* Gris suave */
+  margin: 0;
+  padding: 0;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #e0e0e0; /* Un gris muy suave, más oscuro que el blanco */
-    margin: 0;
-    padding: 0;
-  }
-  /* Header */
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
-  /* Contenedor principal */
-  .container {
-    max-width: 800px;
-    margin: 20px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  /* Estilos del formulario */
-  form {
-    display: grid;
-    gap: 15px;
-  }
-  label {
-    font-weight: bold;
-  }
-  input[type="text"], input[type="number"] {
-    padding: 10px;
-    width: 100%;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  button:hover {
-    background-color: #555;
-  }
-  /* Contenedores de resultados e historial */
-  #resultado {
-    margin-top: 20px;
-    font-size: 18px;
-  }
-  #historial {
-    margin-top: 20px;
-    list-style: none;
-    padding: 0;
-  }
-  #historial li {
-    background-color: #f8f8f8;
-    padding: 8px;
-    margin-bottom: 5px;
-    border-radius: 4px;
-  }
+/* Header */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
 
+/* Contenedor principal */
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos del formulario */
+form {
+  display: grid;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/* Contenedores de resultado e historial */
+#resultado {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+#historial {
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+#historial li {
+  background-color: #f8f8f8;
+  padding: 8px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#historial li button {
+  margin-left: 5px;
+}
+
+/* Resumen final */
+#resumen {
+  margin-top: 20px;
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 4px;
+}

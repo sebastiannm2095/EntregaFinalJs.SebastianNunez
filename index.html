@@ -4,12 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Simulador de Crédito</title>
-  <!-- Incluimos SweetAlert2 desde CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <style>
-  <link rel="stylesheet" href="./styles.css">
-   
-  </style>
+
+  <!-- Enlazamos la hoja de estilos externa -->
+
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <!-- Header sin menú -->
@@ -48,4 +46,13 @@
     <!-- Historial de simulaciones -->
     <h2>Historial de Simulaciones</h2>
     <ul id="historial"></ul>
+    <button id="vaciarHistorial">Vaciar Historial</button>
+    
+    <!-- Sección de resumen (tipo carrito) -->
+    <div id="resumen"></div>
   </div>
+  <script src="./main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  </body>
+  </html>

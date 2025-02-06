@@ -32,7 +32,7 @@ const form = document.querySelector('#formCredito');
       localStorage.setItem("clientes", JSON.stringify(clientes));
     }
 
-    // Función para actualizar el historial y el resumen en el DOM
+    // Función para actualizar el historial y el resumen
     function actualizarHistorial() {
       historialDiv.innerHTML = '';
       clientes.forEach((cliente, index) => {
